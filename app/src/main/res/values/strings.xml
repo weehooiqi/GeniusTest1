@@ -1,0 +1,7 @@
+<resources>
+    <string name="genius">Genius</string>
+    <string name="course">Course</string>
+    <string name="forum">Forum</string>
+    <string name="quiz">Quiz</string>
+    <string name="stats">Stats</string>
+</resources>
