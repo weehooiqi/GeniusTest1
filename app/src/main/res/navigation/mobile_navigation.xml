@@ -8,7 +8,8 @@
     <fragment
         android:id="@+id/navigation_course"
         android:name="com.example.test.ui.course.CourseFragment"
-        android:label="@string/course" />
+        android:label="@string/course"
+        tools:layout="@layout/fragment_course"/>
 
     <fragment
         android:id="@+id/navigation_forum"

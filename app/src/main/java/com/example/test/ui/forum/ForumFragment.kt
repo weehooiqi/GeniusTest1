@@ -21,8 +21,8 @@ class ForumFragment : Fragment() {
     ): View? {
         forumViewModel =
             ViewModelProviders.of(this).get(ForumViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
-        val textView: TextView = root.findViewById(R.id.text_notifications)
+        val root = inflater.inflate(R.layout.fragment_forum, container, false)
+        val textView: TextView = root.findViewById(R.id.text_forum)
         forumViewModel.text.observe(this, Observer {
             textView.text = it
         })

@@ -4,4 +4,8 @@
     <string name="forum">Forum</string>
     <string name="quiz">Quiz</string>
     <string name="stats">Stats</string>
+    <string name="search">Search</string>
+    <string name="aboutUs">About Us</string>
+    <string name="accSettings">Account Settings</string>
+    <string name="logout">Logout</string>
 </resources>
