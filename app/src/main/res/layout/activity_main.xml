@@ -3,6 +3,7 @@
 <androidx.drawerlayout.widget.DrawerLayout android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -11,14 +12,16 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        />
 
+
+
+        ></androidx.appcompat.widget.Toolbar>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="?attr/actionBarSize">
+        android:paddingTop="?attr/actionBarSize"
+        >
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView

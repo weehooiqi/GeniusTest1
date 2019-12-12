@@ -8,4 +8,6 @@
     <string name="aboutUs">About Us</string>
     <string name="accSettings">Account Settings</string>
     <string name="logout">Logout</string>
+    <string name="recent">RECENT</string>
+    <string name="whatsHot">WHAT\'S HOT</string>
 </resources>

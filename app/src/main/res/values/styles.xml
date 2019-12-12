@@ -1,12 +1,22 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
 
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="HeaderBar">
+        <item name="android:background">#303F9F</item>
+        <item name="android:textColorPrimary">#0f0</item>
     </style>
 
 

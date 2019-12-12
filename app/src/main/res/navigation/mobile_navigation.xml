@@ -8,21 +8,20 @@
     <fragment
         android:id="@+id/navigation_course"
         android:name="com.example.test.ui.course.CourseFragment"
-        android:label="@string/course"
         tools:layout="@layout/fragment_course"/>
 
     <fragment
         android:id="@+id/navigation_forum"
         android:name="com.example.test.ui.forum.ForumFragment"
-        android:label="@string/forum" />
+        />
 
     <fragment
         android:id="@+id/navigation_quiz"
         android:name="com.example.test.ui.quiz.QuizFragment"
-        android:label="@string/quiz" />
+         />
 
     <fragment
         android:id="@+id/navigation_stats"
         android:name="com.example.test.ui.stats.StatsFragment"
-        android:label="@string/stats" />
+        />
 </navigation>
