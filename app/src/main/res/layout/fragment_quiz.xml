@@ -56,26 +56,6 @@
 
         <Button
 
-            android:id="@+id/q2"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/course_button"
-            android:backgroundTint="#ffcccc"
-            android:drawableLeft="@drawable/ic_science_quiz"
-            android:drawablePadding="20dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:text="Computer Science Warmups Level 1: Challenges"
-            android:textSize="12sp"
-            >
-
-        </Button>
-
-        <Button
-
             android:id="@+id/q1"
             android:layout_width="match_parent"
             android:layout_height="70dp"

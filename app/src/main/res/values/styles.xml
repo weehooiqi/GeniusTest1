@@ -14,9 +14,9 @@
         <item name="android:fontFamily">@font/roboto</item>
     </style>
 
-    <style name="HeaderBar">
-        <item name="android:background">#303F9F</item>
-        <item name="android:textColorPrimary">#0f0</item>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/text</item>
     </style>
 
 

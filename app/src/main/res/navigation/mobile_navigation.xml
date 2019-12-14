@@ -21,17 +21,7 @@
         android:name="com.example.test.ui.quiz.QuizFragment"
         tools:layout="@layout/fragment_quiz">
 
-        <action
-            android:id="@+id/action_nav_quiz_to_quizQuestion"
-            app:destination="@id/quizQuestion" />
     </fragment>
-
-    <fragment
-        android:id="@+id/quizQuestion"
-        android:name="com.example.test.QuizQuestionFragment"
-        android:label="Quiz Fragment"
-        tools:layout="@layout/quiz_question" />
-
 
 
     <fragment
