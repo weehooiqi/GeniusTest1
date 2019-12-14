@@ -4,5 +4,5 @@
     <color name="colorPrimaryDark">#cccccc</color>
     <color name="colorAccent">#FFFF0000</color>
     <color name="text">#51504c</color>
-    <color name="selectedItem">#FFFF0000</color>
+    <color name="selectedItem">#FF0000</color>
 </resources>
