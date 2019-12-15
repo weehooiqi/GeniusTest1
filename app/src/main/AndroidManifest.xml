@@ -22,13 +22,18 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
         <activity
-            android:name=".AboutUs3"
+            android:name=".AboutUs"
             android:label="@string/genius">
         </activity>
 
         <activity
             android:name=".QuizQuestion"
             android:label="@string/quiz">
+        </activity>
+
+        <activity
+            android:name=".QuizResult"
+            >
         </activity>
     </application>
 

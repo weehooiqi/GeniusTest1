@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import kotlinx.android.synthetic.main.about_us.*
 
-class AboutUs2 : Activity(){
+class AboutUs : Activity(){
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

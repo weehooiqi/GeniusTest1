@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when (item.itemId) {
-            R.id.aboutUsFragment -> startActivity(Intent(this, AboutUs2::class.java))
+            R.id.aboutUsFragment -> startActivity(Intent(this, AboutUs::class.java))
             R.id.searchFragment -> Toast.makeText(this, "Clicked item two", Toast.LENGTH_SHORT).show()
             R.id.accSettingsFragment -> Toast.makeText(this, "Clicked item three", Toast.LENGTH_SHORT).show()
         }
