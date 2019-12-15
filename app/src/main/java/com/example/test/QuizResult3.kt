@@ -21,7 +21,7 @@ import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 
 
 
-class QuizQuestion : AppCompatActivity() {
+class QuizResult3 : AppCompatActivity() {
 
     data class Question(
         val text: String,
@@ -73,8 +73,7 @@ class QuizQuestion : AppCompatActivity() {
 
         randomizeQuestions()
 
-        // Bind this fragment class to the layout
-        binding.game = this
+
 
         var check = true
 
@@ -160,7 +159,7 @@ class QuizQuestion : AppCompatActivity() {
 
     override fun onBackPressed() {
 
-        val builder = AlertDialog.Builder(this@QuizQuestion, R.style.AlertDialogCustom)
+        val builder = AlertDialog.Builder(this@QuizResult3, R.style.AlertDialogCustom)
 
         // Set the alert dialog title
         builder.setTitle("Exit?")

@@ -40,7 +40,7 @@ class QuizFragment : Fragment() {
 
             builder.setTitle("Quiz Time")
             builder.setMessage("Start $buttonText?")
-            builder.setPositiveButton("YES"){dialog, which ->
+            builder.setPositiveButton("Yes"){dialog, which ->
                 val intent = Intent(activity, QuizQuestion::class.java)
                 startActivity(intent)
                 Toast.makeText(activity,"Start!", Toast.LENGTH_SHORT).show()
