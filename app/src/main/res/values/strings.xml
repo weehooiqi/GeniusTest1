@@ -15,4 +15,37 @@
     <string name="back">Back</string>
     <string name="result">Result</string>
 
+    <string name="computerScience">
+
+        Learn the key ideas of computer science with this interactive course - no coding required!\n\n
+        This course is ideal for a high school or college\n\n
+        hahahahhaha\n\n
+        HIHIHIHI\n\n
+        HOHOHOHO\n\n
+
+
+    </string>
+
+    <string name="topicCover">
+        Binary\n
+        Logic Gates\n
+        Propositional Logic\n
+        De morgan’s Laws\n
+
+    </string>
+
+    <string name="topicContent">
+        Binary\n\n
+        What is Binary ? Binary is a base 2 number system invented by\n\n
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="BinaryContent">
+        What is Binary ? Binary is a base 2 number system invented by Gottfried Leibniz that is made up of only two numbers: 0 and 1.
+        This number system is the basis for all binary code, which is used to write data such as the computer processor instructions used every day.
+
+    </string>
+
 </resources>

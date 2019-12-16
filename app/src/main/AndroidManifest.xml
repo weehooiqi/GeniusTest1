@@ -35,6 +35,10 @@
             android:name=".QuizResult"
             >
         </activity>
+
+        <activity android:name=".ui.course.courseContent.LogicGates" />
+        <activity android:name=".ui.course.courseContent.ComputerScience" />
+        <activity android:name=".CourseContent" />
     </application>
 
 
