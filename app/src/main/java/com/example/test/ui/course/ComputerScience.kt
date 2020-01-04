@@ -1,4 +1,4 @@
-package com.example.test.ui.course.courseContent
+package com.example.test.ui.course
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -25,7 +25,7 @@ class ComputerScience : AppCompatActivity() {
 
         btnNextTopic.setOnClickListener {
 
-            val intent = Intent(this, LogicGates ::class.java)
+            val intent = Intent(this, LogicGates::class.java)
             startActivity(intent)
 
         }

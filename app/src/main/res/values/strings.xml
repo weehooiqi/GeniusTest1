@@ -48,4 +48,28 @@
 
     </string>
 
+
+    <string name="app_name">LoginPage</string>
+    <string name="login">Log In</string>
+    <string name="register">Register</string>
+    <string name="hello">Hello There!</string>
+    <string name="email">E-mail address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="not_member">Not a member?</string>
+    <string name="forgot_password1">Forgot Password?</string>
+    <string name="forgot_password_text">Forgot your password?No worries, please enter your
+                                        e-mail address and you will be able to reset your
+        password in no time. Any questions, please e-mail us at <font fgcolor="#173172"><u>geniuslearningapp@gmail.com</u></font></string>
+    <string name="forgot_pw_email">Send Email</string>
+    <string name="register_page">Register</string>
+    <string name="confirm_pw">Confirm Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="birthday">Birthday (DD-MM-YYYY)</string>
+    <string name="register_account">Create Account</string>
+    <string name="existing_user">Existing User?</string>
+    <string name="log_in">Log In</string>
+    <string name="terms_condition">By tapping "Create Account", you have agree to Genius </string>
+    <string name="terms">Terms of Service and Privacy Policy</string>
 </resources>

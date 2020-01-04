@@ -5,28 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/aboutUs"
+    <EditText
+        android:id="@+id/testEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="dwa"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="text"
+        android:paddingTop="?attr/actionBarSize"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecycler"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
-        android:text="Test"
-        android:textColor="@color/selectedItem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aboutUs" />
 
+        app:layout_constraintTop_toBottomOf="@+id/testEdit" />
 </androidx.constraintlayout.widget.ConstraintLayout>

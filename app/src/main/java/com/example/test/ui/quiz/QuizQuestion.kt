@@ -1,4 +1,4 @@
-package com.example.test
+package com.example.test.ui.quiz
 
 import android.app.AlertDialog
 import android.graphics.Color
@@ -13,6 +13,7 @@ import com.example.test.databinding.QuizQuestionBinding
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.quiz_question.*
 import android.content.Intent
+import com.example.test.R
 
 
 class QuizQuestion : AppCompatActivity() {
@@ -22,14 +23,22 @@ class QuizQuestion : AppCompatActivity() {
         val answers: List<String>)
 
     private val questions: MutableList<Question> = mutableListOf(
-        Question(text = "1 + 1 = ",
-            answers = listOf("2", "1", "3", "4")),
-        Question(text = "2 + 2 = ",
-            answers = listOf("4", "1", "2", "3")),
-        Question(text = "3 + 3 = ",
-            answers = listOf("6", "1", "2", "3")),
-        Question(text = "4 + 4 = ",
-            answers = listOf("8", "1", "2", "3"))
+        Question(
+            text = "1 + 1 = ",
+            answers = listOf("2", "1", "3", "4")
+        ),
+        Question(
+            text = "2 + 2 = ",
+            answers = listOf("4", "1", "2", "3")
+        ),
+        Question(
+            text = "3 + 3 = ",
+            answers = listOf("6", "1", "2", "3")
+        ),
+        Question(
+            text = "4 + 4 = ",
+            answers = listOf("8", "1", "2", "3")
+        )
     )
 
     lateinit var currentQuestion: Question
@@ -147,7 +156,9 @@ class QuizQuestion : AppCompatActivity() {
 
     override fun onBackPressed() {
 
-        val builder = AlertDialog.Builder(this@QuizQuestion, R.style.AlertDialogCustom)
+        val builder = AlertDialog.Builder(this@QuizQuestion,
+            R.style.AlertDialogCustom
+        )
 
         // Set the alert dialog title
         builder.setTitle("Exit?")

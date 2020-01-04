@@ -1,10 +1,12 @@
 package com.example.test
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -69,9 +71,22 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START)
         } else {
-            super.onBackPressed()
+            val builder = AlertDialog.Builder(this,R.style.AlertDialogCustom)
+
+            builder.setMessage("Are you sure you want to Exit ?")
+            builder.setCancelable(true)
+
+            builder.setNegativeButton("No", DialogInterface.OnClickListener { dialog, i ->
+                dialog.cancel()
+            })
+
+            builder.setPositiveButton("Yes" , DialogInterface.OnClickListener { dialog, i ->
+                finish()
+            })
+
+            val dialog = builder.create()
+            dialog.setTitle("Exit")
+            dialog.show()
         }
     }
-
-
 }

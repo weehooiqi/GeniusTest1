@@ -9,44 +9,45 @@
 
         <variable
             name="game"
-            type="com.example.test.QuizQuestion" />
+            type="com.example.test.ui.quiz.QuizQuestion" />
     </data>
 
-    <androidx.drawerlayout.widget.DrawerLayout android:id="@+id/drawerLayout"
+    <RelativeLayout
+        android:id="@+id/drawerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         >
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            />
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
+            android:layout_marginTop="?attr/actionBarSize"
+            >
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
-
-                <androidx.appcompat.widget.Toolbar
-                    android:id="@+id/toolbar2"
-                    android:layout_width="match_parent"
-                    android:layout_height="?attr/actionBarSize"
-                    android:background="?attr/colorPrimary"
-                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/questionText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/question_horizontal_margin"
-                    android:layout_marginTop="100dp"
+                    android:layout_marginTop="32dp"
                     android:layout_marginEnd="@dimen/question_horizontal_margin"
-                    app:fontFamily="@font/roboto"
                     android:text="@{game.currentQuestion.text}"
                     android:textSize="@dimen/question_text_size"
                     android:textStyle="bold"
                     android:typeface="normal"
+                    app:fontFamily="@font/roboto"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -126,6 +127,6 @@
 
         </ScrollView>
 
-    </androidx.drawerlayout.widget.DrawerLayout>
+    </RelativeLayout>
 </layout>
 

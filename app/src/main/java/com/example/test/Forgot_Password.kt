@@ -1,13 +1,13 @@
-package com.example.test.ui.course.courseContent
+package com.example.test
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.test.R
 
-class LogicGates : AppCompatActivity() {
+class Forgot_Password : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_logic_gates)
+        setContentView(R.layout.activity_forgot__password)
     }
 }
