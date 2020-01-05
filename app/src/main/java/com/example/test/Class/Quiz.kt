@@ -1,7 +1,6 @@
 package com.example.test.Class
 
-data class Course(
+data class Quiz(
     var title: String? = "",
-    var desc: String? = "",
     var id: String? = ""
 )

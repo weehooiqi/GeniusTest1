@@ -5,10 +5,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
+import androidx.recyclerview.widget.RecyclerView
+import com.example.test.Class.Course
 import com.example.test.R
+import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.activity_course_content.*
 
 class CourseContent : AppCompatActivity() {
+
+    lateinit var mDatabase : DatabaseReference
+    lateinit var tvOverview: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +28,18 @@ class CourseContent : AppCompatActivity() {
         getSupportActionBar()?.setDisplayShowTitleEnabled(false)
         getSupportActionBar()?.setDisplayHomeAsUpEnabled(true)
         getSupportActionBar()?.setDisplayShowHomeEnabled(true)
+
+
+
+
+        readCourse()
+
+
+
+
+
+
+
 
         /*Testing for button click to another page*/
 
@@ -38,9 +59,32 @@ class CourseContent : AppCompatActivity() {
 
     }
 
-    override fun onSupportNavigateUp(): Boolean {
+    private fun readCourse() {
+
+        mDatabase = FirebaseDatabase.getInstance().getReference("Course")
+        val mDatabaseRef = mDatabase.child(intent.getStringExtra("id"))
+        tvOverview = findViewById(R.id.tv_overview_content)
+
+
+            mDatabaseRef.addValueEventListener(object: ValueEventListener {
+            override fun onCancelled(p0: DatabaseError) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+
+            override fun onDataChange(p0: DataSnapshot) {
+
+                if (p0.exists()) {
+                    tvOverview.text = p0.child("desc").value as String
+                }
+            }
+        })
+
+    }
+
+    override fun onBackPressed() {
+
 
         super.onBackPressed()
-        return true
+        this.finish()
     }
 }

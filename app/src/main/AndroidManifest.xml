@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainMain"
+            android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/genius">
             <intent-filter>
@@ -41,7 +41,7 @@
         <activity android:name=".Register"></activity>
         <activity android:name=".Forgot_Password" />
         <activity android:name=".Login1" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainMain"></activity>
 
         <activity android:name=".ui.course.LogicGates" />
         <activity android:name=".ui.course.ComputerScience" />

@@ -13,7 +13,11 @@ import com.example.test.databinding.QuizQuestionBinding
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.quiz_question.*
 import android.content.Intent
+import android.util.Log
+import android.widget.TextView
+import com.example.test.Class.Quiz
 import com.example.test.R
+import com.google.firebase.database.*
 
 
 class QuizQuestion : AppCompatActivity() {
@@ -22,7 +26,11 @@ class QuizQuestion : AppCompatActivity() {
         val text: String,
         val answers: List<String>)
 
+    lateinit var mDatabase : DatabaseReference
+
     private val questions: MutableList<Question> = mutableListOf(
+
+
         Question(
             text = "1 + 1 = ",
             answers = listOf("2", "1", "3", "4")
@@ -40,6 +48,8 @@ class QuizQuestion : AppCompatActivity() {
             answers = listOf("8", "1", "2", "3")
         )
     )
+
+    lateinit var questions2: MutableList<Question>
 
     lateinit var currentQuestion: Question
     lateinit var answers: MutableList<String>
@@ -61,6 +71,14 @@ class QuizQuestion : AppCompatActivity() {
         supportActionBar?.setDisplayShowHomeEnabled(true)
 
         toolbar.setBackgroundColor(Color.parseColor("#ffff00"))
+
+
+        readQuiz()
+
+
+
+
+
 
         randomizeQuestions()
 
@@ -133,6 +151,34 @@ class QuizQuestion : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    private fun readQuiz() {
+
+        mDatabase = FirebaseDatabase.getInstance().getReference("QuizDetail")
+        val mDatabaseRef = mDatabase.child(intent.getStringExtra("id"))
+
+        mDatabaseRef.addValueEventListener(object: ValueEventListener {
+            override fun onCancelled(p0: DatabaseError) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+
+            override fun onDataChange(p0: DataSnapshot) {
+
+                if (p0.exists()) {
+
+                    for (h in p0.children) {
+
+                        Log.d("hahqwea", h.child("question").toString())
+//                        questions2.add(Quiz)
+
+                    }
+
+
+                }
+            }
+        })
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

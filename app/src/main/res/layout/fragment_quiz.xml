@@ -39,8 +39,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/quizRecycler"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -48,31 +48,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_recent3">
-
-        <Button
-
-            android:id="@+id/q1"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/course_button"
-            android:backgroundTint="#ffab"
-            android:drawableLeft="@drawable/ic_science_quiz"
-            android:drawablePadding="20dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:text="Computer Science Warmups Level 2: Challenges"
-            android:textSize="12sp">
-
-        </Button>
-
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/tv_recent3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

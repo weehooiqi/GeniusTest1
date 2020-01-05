@@ -5,26 +5,25 @@
     android:paddingTop="10dp">
 
     <Button
-
-        android:id="@+id/test"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
+        android:id="@+id/quizButton"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/course_button"
-        android:backgroundTint="#ffcccc"
-        android:drawableBottom="@drawable/ic_science"
-        android:paddingLeft="10dp"
+        android:backgroundTint="#ffab"
+        android:drawableLeft="@drawable/ic_science_quiz"
+        android:drawablePadding="20dp"
         android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="50dp"
-        android:text="Computer Science"
-        android:textSize="14sp">
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Computer Science Warmups Level 2: Challenges"
+        android:textSize="12sp">
 
     </Button>
 
     <TextView
-        android:id="@+id/courseID"
+        android:id="@+id/quizID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:cursorVisible="false"
